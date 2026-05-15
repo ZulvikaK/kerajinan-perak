@@ -82,28 +82,8 @@
     </script>
 </head>
 <body class="bg-background text-on-surface font-body-md selection:bg-primary selection:text-on-primary">
-<!-- TopNavBar -->
-<nav class="sticky top-6 z-50 px-4 md:px-0 flex justify-center w-full">
-<div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 flex items-center justify-between w-full max-w-5xl shadow-xl">
-<!-- Logo -->
-<div class="flex items-center h-12"><div class="font-headline-md text-headline-md text-on-surface uppercase flex items-center gap-3 font-serif tracking-wider font-medium"><img alt="SR Supply Diamond Outline Logo" class="h-8 w-8 object-contain" src="assets/logo.png"/><span class="">SR SUPPLY</span></div></div>
-<!-- Navigation Links -->
-<div class="hidden md:flex items-center gap-8">
-<a class="text-primary font-bold font-label-md text-label-md" href="#">Home</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Expertise</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Collection</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Customization</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Clients</a>
-</div>
-<!-- Action Button -->
-<div class="flex items-center">
-<button class="bg-on-surface text-inverse-on-surface px-6 py-2 rounded-full font-label-md text-label-md flex items-center gap-2 hover:bg-primary transition-all duration-300">
-<span class="material-symbols-outlined text-sm">shopping_cart</span>
-        Shop Retail
-      </button>
-</div>
-</div>
-</nav>
+<!-- TopNavBar (Reusable Component) -->
+<sr-navbar active-page="home"></sr-navbar>
 <!-- Hero Section -->
 <header class="relative min-h-[819px] flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
@@ -114,7 +94,7 @@
 <div class="max-w-3xl text-left">
 <h1 class="font-headline-display text-headline-display mb-6 leading-tight">Elevate Your Craft with Premium Hardware.</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
-                    Menyediakan custom perak, solid brass, dan metal hardware berkualitas tinggi untuk brand fashion dan corporate souvenirs.
+                 Providing high-quality custom silver, solid brass, and metal hardware for fashion brands and corporate souvenirs
                 </p>
 <div class="flex flex-col sm:flex-row gap-4">
 <button class="bg-[#F9F7F2] text-[#1A1A1B] rounded-full px-8 py-4 font-label-md text-label-md shadow-lg hover:brightness-90 transition-all">Discuss Custom Order</button>
@@ -408,62 +388,9 @@
 </div>
 </div>
 </section>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
-<!-- Column 1 (About) -->
-<div class="md:col-span-1">
-<div class="font-headline-md text-headline-md text-[#A68956] uppercase mb-6 flex items-center gap-3 font-medium tracking-wider" style='font-family: "Libre Caslon Text", serif;'><div class="flex items-center gap-3"><span class="">SR SUPPLY</span></div></div>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                    Industrial heritage, sophisticated hardware, and handcrafted precision from the heart of Yogyakarta.
-                </p>
-</div>
-<!-- Column 2 (Workshop) -->
-<div>
-<h5 class="font-label-md text-label-md text-primary uppercase mb-6">Workshop</h5>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                    Jl. Imogiri Barat KM 7,<br/>
-                    Banguntapan, Bantul,<br/>
-                    Yogyakarta 55188, Indonesia
-                </p>
-</div>
-<!-- Column 3 (Navigation) -->
-<div>
-<h5 class="font-label-md text-label-md text-primary uppercase mb-6">Navigation</h5>
-<ul class="space-y-4 font-body-md text-body-md">
-<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Expertise</a></li>
-<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Products</a></li>
-<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Custom Order</a></li>
-<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Workshop Info</a></li>
-</ul>
-</div>
-<!-- Column 4 (Connect) -->
-<div>
-<h5 class="font-label-md text-label-md text-primary uppercase mb-6">Connect</h5>
-<div class="flex flex-col gap-4">
-<a class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-all" href="#">
-<span class="material-symbols-outlined text-sm">alternate_email</span> @srsilver_srsupply
-                    </a>
-<a class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-all" href="#">
-<span class="material-symbols-outlined text-sm">alternate_email</span> @srsupplyhardware
-                    </a>
-<a class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-all" href="#">
-<span class="material-symbols-outlined text-sm">mail</span> contact@srsupply.com
-                    </a>
-</div>
-</div>
-</div>
-<!-- Bottom Footer -->
-<div class="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-outline-variant gap-6">
-<p class="font-label-sm text-label-sm text-on-surface-variant opacity-70">
-                © 2026 SR Supply. Handcrafted with industrial precision in Yogyakarta.
-            </p>
-<div class="flex gap-8">
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline" href="#">Privacy Policy</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
+<!-- Footer (Reusable Component) -->
+<sr-footer></sr-footer>
+<!-- Reusable Components -->
+<script src="components/navbar.js"></script>
+<script src="components/footer.js"></script>
 </body></html>

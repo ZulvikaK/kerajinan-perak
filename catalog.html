@@ -1,0 +1,322 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>The Silver Collection - SR Supply</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#e4e2dd",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed": "#271900",
+                      "inverse-surface": "#30312e",
+                      "inverse-primary": "#e3c28a",
+                      "on-surface": "#1b1c19",
+                      "tertiary": "#5c5c5d",
+                      "primary-container": "#8b7040",
+                      "on-tertiary": "#ffffff",
+                      "surface": "#fbf9f4",
+                      "background": "#fbf9f4",
+                      "primary-fixed-dim": "#e3c28a",
+                      "primary-fixed": "#ffdea8",
+                      "on-background": "#1b1c19",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-fixed-variant": "#44474b",
+                      "error-container": "#ffdad6",
+                      "outline-variant": "#d0c5b6",
+                      "secondary-container": "#e0e2e8",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed-variant": "#474647",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed": "#1b1b1c",
+                      "on-error": "#ffffff",
+                      "secondary": "#5b5f63",
+                      "tertiary-container": "#757475",
+                      "on-secondary-container": "#616569",
+                      "inverse-on-surface": "#f2f1ec",
+                      "tertiary-fixed": "#e5e2e3",
+                      "surface-bright": "#fbf9f4",
+                      "secondary-fixed": "#e0e2e8",
+                      "on-tertiary-container": "#fffcfd",
+                      "on-primary-fixed-variant": "#5a4317",
+                      "primary": "#71582a",
+                      "surface-tint": "#735a2c",
+                      "surface-container": "#f0eee9",
+                      "on-secondary-fixed": "#181c20",
+                      "on-primary-container": "#fffbff",
+                      "secondary-fixed-dim": "#c4c6cc",
+                      "tertiary-fixed-dim": "#c8c6c7",
+                      "surface-dim": "#dbdad5",
+                      "surface-container-highest": "#e4e2dd",
+                      "on-surface-variant": "#4d463a",
+                      "surface-container-high": "#eae8e3",
+                      "surface-container-low": "#f5f3ee",
+                      "outline": "#7f7669",
+                      "on-error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "section-gap": "120px",
+                      "margin-mobile": "16px",
+                      "container-max": "1440px",
+                      "base": "8px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Libre Caslon Text"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-sm": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-md": [
+                              "Libre Caslon Text"
+                      ],
+                      "label-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg-mobile": [
+                              "Libre Caslon Text"
+                      ],
+                      "headline-display": [
+                              "Libre Caslon Text"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.03em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-display": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #1a1a1a;
+            color: #e4e2dd;
+            background-image: radial-gradient(circle at 50% 0%, #2a2a2a 0%, #1a1a1a 100%);
+            background-attachment: fixed;
+        }
+        .btn-primary {
+            background-color: #A68956;
+            color: #1b1c19;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #8b7040;
+        }
+        .btn-secondary {
+            border: 1px solid #7f7669;
+            color: #e4e2dd;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: rgba(255,255,255,0.05);
+            border-color: #A68956;
+        }
+        .glass-panel {
+            background: rgba(48, 49, 46, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+<style data-stitch-cursor=""></style><style data-stitch-scroll-lock=""></style></head>
+<body class="font-body-md text-body-md antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar (Reusable Component) -->
+<sr-navbar active-page="collection"></sr-navbar>
+<!-- Main Content -->
+<main class="pt-[140px] pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Header Section -->
+<header class="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-outline/20 pb-8">
+<div class="max-w-2xl">
+<h1 class="font-headline-display text-headline-display text-on-surface dark:text-inverse-on-surface mb-6">The Silver Collection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-surface-variant">925 Sterling Silver hand-finished industrial hardware. Forged with precision, designed for heritage.</p>
+</div>
+<!-- Filters -->
+<div class="flex flex-wrap gap-4 mt-8 md:mt-0">
+<button class="px-4 py-2 text-label-sm font-label-sm uppercase tracking-wider border border-[#A68956] text-[#A68956] hover:bg-[#A68956]/10 transition-colors">All</button>
+<button class="px-4 py-2 text-label-sm font-label-sm uppercase tracking-wider text-surface-variant hover:text-[#A68956] transition-colors">Buckles</button>
+<button class="px-4 py-2 text-label-sm font-label-sm uppercase tracking-wider text-surface-variant hover:text-[#A68956] transition-colors">Emblems</button>
+<button class="px-4 py-2 text-label-sm font-label-sm uppercase tracking-wider text-surface-variant hover:text-[#A68956] transition-colors">Bespoke Art</button>
+</div>
+</header>
+<!-- Product Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<article class="group relative flex flex-col h-full">
+<div class="aspect-square w-full overflow-hidden bg-inverse-surface mb-6 relative max-h-[400px]">
+<img alt="Industrial Silver Buckle" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out mix-blend-luminosity hover:mix-blend-normal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8Ln6tXHKY2-gJP7lJm-MzsWWfaLwbplVpDKjZQpilpZdtwHMwVDuZDme8wfbvnZC_2Ms0aRjGiayERMm-KSVSctlsL3oH17cu3DEke0VBFxA25q4V3IEYEAtvH2u-ocgygWI5Huu_2q4RflXPOb-65VwyK-MQOkhMqCQuUXEXVDY5EOU1FVJA2gMkdb0JYKs86MHewHY2H8ZbNt8FB9ZiXpg-AperyxEn9_F_2dt9Gw9xOmUEo5cP7CvuIBg-xKltcJrYkLYDGa0N">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface min-h-[3.5rem] flex items-center">Industrial Silver Buckle</h2>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
+<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group relative flex flex-col mt-0 h-full">
+<div class="aspect-square w-full overflow-hidden bg-inverse-surface mb-6 relative max-h-[400px]">
+<img alt="Heritage Monogram Tag" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out mix-blend-luminosity hover:mix-blend-normal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY7r7zyiH4cAOY2dj6a4qqwR-XE6qHjXtwDsaDOtdxVJ-CYexz06Bpt4yVX0jAqwyLL63RQ8KnI36Zz-omxQ24SnY3X1-BixrbblpCaraO1oSg89fU8Hm-JIRtKT-CTJnn2IQwzYSVCbF_TjKDxujJiT5jdBiLTTRHtJf1XoI2WsCCSCcmSKVLJFU9cA19uj_T-68WBdW6X8NYg_5Vsa0BDM21gW5FXwKvt0ocyIXdNxUodhayGkmHhPOs5PUWwvXORNUQo-eUDbsu">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface min-h-[3.5rem] flex items-center">Heritage Monogram Tag</h2>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
+<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group relative flex flex-col h-full">
+<div class="aspect-square w-full overflow-hidden bg-inverse-surface mb-6 relative max-h-[400px]">
+<img alt="Bespoke Artisan Plaque" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out mix-blend-luminosity hover:mix-blend-normal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5xwrjCN--biCvI9Z6IrIBoEuY5cY6OaPZ-k_xAiACzLtgWfEMi0pCKlZb8BEspBzUfAnxtKSObD0y8NsfFK6wTl1gGnpaT-WiT1FfCZLblGoMY7hOMCPjmRaImxpB707bld2Xf7R4hC1wFyLq7GysJ0WhKNWozR2i9niYKCpMBLh3l7p7CPLliG-kAvBDQp1qHPMm4aewYc3Bz6VfGDG76OCoVDIoguDhuye4dAHDR49S2rJ0fONRejqBn9rE22YHZGlcIbybFxlo">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface min-h-[3.5rem] flex items-center">Bespoke Artisan Plaque</h2>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
+<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="group relative flex flex-col mt-0 lg:mt-0 h-full">
+<div class="aspect-square w-full overflow-hidden bg-inverse-surface mb-6 relative max-h-[400px]">
+<img alt="Machined Silver Clasp" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out mix-blend-luminosity hover:mix-blend-normal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKTr3kE5A4S2l3Yp2xqOEMx9W6ZcAhFMENLfgGdMD58ZRewkY8bpbG3MXIZdKnHfAXVgwoKZhUvaSn5MCB1Cuf7fO6L0PNNjTyz6BeSUHDgaCZziNzOy2VNySJeOcG6BMxJ8O-kK2ZV3VKlO4PSYDAlKUGWdY1_0qeDB2F-LrC3qbSOtZHCqTjA63zr2i6SV75_A05fAz8sjFjEpA4UTlzXdEMmnbKph1wTES-_WchwsMpOz27tmGgHOZCi501o2ekMpKrYdAFPIvP">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface min-h-[3.5rem] flex items-center">Machined Silver Clasp</h2>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
+<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+</div>
+</article>
+<!-- Product Card 5 -->
+<article class="group relative flex flex-col mt-0 md:mt-0 h-full">
+<div class="aspect-square w-full overflow-hidden bg-inverse-surface mb-6 relative max-h-[400px]">
+<img alt="Architectural Accent Piece" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out mix-blend-luminosity hover:mix-blend-normal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC31qe2NcM6tzp5R9yJyO0dY81HO-Q6fxi7Qr3X4JbCRojVFYX3DMNPmpbYkbLfo9i2WFig4b-d09fYqqW1FOXyOudK1Qa8mwlbSC70xb41EzCIz3nxHsGG9gOYPifux8KJJUD_hgOUp5PYqGc-jpJJjikFRnhJF_MWLWgjTgW6_990nyd09_LQDHB0igcOOHi0-wlQnWrXYPQL9jDT3a13ZULZvBocuwimlQWIIw8X13ZeKXHafMHSaZQqWw7koxWE-Fy85OtUEV0n">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface min-h-[3.5rem] flex items-center">Architectural Accent Piece</h2>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
+<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+</div>
+</article>
+<!-- Product Card 6 -->
+<article class="group relative flex flex-col mt-0 lg:mt-0 h-full">
+<div class="aspect-square w-full overflow-hidden bg-inverse-surface mb-6 relative max-h-[400px]">
+<img alt="Minimalist Cuff Link Set" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out mix-blend-luminosity hover:mix-blend-normal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC569z1aY2IJSbWXEq0EuaZrUCGLpBRhxPvISgh1IoqEruEULIYQK2atO2UTlptz3jijXJjWh2O33YXZD-YuPav-cteZILI4QZgNjCIB9DYyQCLYYyvpJrQldTVigzek6I5olYQ_D09cb5j-Pt--HMTBmQvpxAJnL3YTupWeA7fxS-WzaxK3v4TfryhwzDb4SQWfr3isrAoNx02CdhBokbyHPz_mBSTSSF3od9CC0eAHb-AJ1pzCXoOwTdTGl071dXBRlW1pPQ7aZ6p">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface min-h-[3.5rem] flex items-center">Minimalist Cuff Link Set</h2>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
+<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+</div>
+</article>
+</section>
+<!-- CTA Section -->
+<section class="mt-section-gap pt-16 border-t border-outline/20 text-center max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-on-surface dark:text-inverse-on-surface mb-6">Custom Silver Orders</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-surface-variant mb-8">Require a specific specification or a completely bespoke design? Our master craftsmen in Yogyakarta are available for specialized commissions.</p>
+<button class="btn-primary font-label-md text-label-md px-8 py-3 uppercase tracking-wider inline-flex items-center gap-2">
+                Begin Consultation <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- Footer (Reusable Component) -->
+<sr-footer></sr-footer>
+
+<!-- Reusable Components -->
+<script src="components/navbar.js"></script>
+<script src="components/footer.js"></script>
+</body></html>
