@@ -35,7 +35,7 @@ class SrNavbar extends HTMLElement {
         <div id="sr-navbar-inner" class="bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 flex items-center justify-between shadow-xl transition-all duration-300">
 
           <!-- Logo -->
-          <a href="index.html" class="flex items-center gap-3 h-10 no-underline shrink-0">
+          <a href="/" class="flex items-center gap-3 h-10 no-underline shrink-0">
             <img
               src="assets/logo.png"
               alt="SR Supply Logo"
@@ -49,10 +49,10 @@ class SrNavbar extends HTMLElement {
 
           <!-- Desktop Navigation Links -->
           <div class="hidden md:flex items-center gap-8">
-            <a class="${this._linkClass('home', activePage)}" href="index.html">Home</a>
-            <a class="${this._linkClass('aboutus', activePage)}" href="aboutus.html">About Us</a>
-            <a class="${this._linkClass('collection', activePage)}" href="collection.html">Collection</a>
-            <a class="${this._linkClass('expertise', activePage)}" href="expertise.html">Expertise</a>
+            <a class="${this._linkClass('home', activePage)}" href="/">Home</a>
+            <a class="${this._linkClass('aboutus', activePage)}" href="/aboutus">About Us</a>
+            <a class="${this._linkClass('collection', activePage)}" href="/collection">Collection</a>
+            <a class="${this._linkClass('expertise', activePage)}" href="/expertise">Expertise</a>
           </div>
 
           <!-- Action Button + Hamburger -->
@@ -76,10 +76,10 @@ class SrNavbar extends HTMLElement {
 
         <!-- Mobile Dropdown Menu -->
         <div id="sr-nav-mobile" class="hidden mt-2 bg-surface-container-highest/95 backdrop-blur-md border border-white/10 rounded-2xl px-6 py-4 flex-col gap-4 shadow-xl">
-          <a class="font-label-md text-label-md ${activePage === 'home' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2 border-b border-white/10" href="index.html">Home</a>
-          <a class="font-label-md text-label-md ${activePage === 'aboutus' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2 border-b border-white/10" href="aboutus.html">About Us</a>
-          <a class="font-label-md text-label-md ${activePage === 'collection' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2 border-b border-white/10" href="collection.html">Collection</a>
-          <a class="font-label-md text-label-md ${activePage === 'expertise' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2" href="expertise.html">Expertise</a>
+          <a class="font-label-md text-label-md ${activePage === 'home' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2 border-b border-white/10" href="/">Home</a>
+          <a class="font-label-md text-label-md ${activePage === 'aboutus' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2 border-b border-white/10" href="/aboutus">About Us</a>
+          <a class="font-label-md text-label-md ${activePage === 'collection' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2 border-b border-white/10" href="/collection">Collection</a>
+          <a class="font-label-md text-label-md ${activePage === 'expertise' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2" href="/expertise">Expertise</a>
           <button
             onclick="window.open('https://wa.me/6281320740494?text=Hello', '_blank')"
             class="mt-2 bg-primary text-surface px-5 py-2.5 rounded-full font-label-md text-label-md flex items-center justify-center gap-2 hover:brightness-110 transition-all"
