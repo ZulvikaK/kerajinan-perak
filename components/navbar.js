@@ -14,7 +14,10 @@ class SrNavbar extends HTMLElement {
 
   _detectActivePage() {
     const path = window.location.pathname;
+    if (path.includes('aboutus')) return 'aboutus';
     if (path.includes('catalog')) return 'collection';
+    if (path.includes('collection')) return 'collection';
+    if (path.includes('expertise')) return 'expertise';
     return 'home';
   }
 
@@ -32,7 +35,7 @@ class SrNavbar extends HTMLElement {
         <div id="sr-navbar-inner" class="bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 flex items-center justify-between shadow-xl transition-all duration-300">
 
           <!-- Logo -->
-          <a href="index.html" class="flex items-center gap-3 h-10 no-underline">
+          <a href="index.html" class="flex items-center gap-3 h-10 no-underline shrink-0">
             <img
               src="assets/logo.png"
               alt="SR Supply Logo"
@@ -47,20 +50,19 @@ class SrNavbar extends HTMLElement {
           <!-- Desktop Navigation Links -->
           <div class="hidden md:flex items-center gap-8">
             <a class="${this._linkClass('home', activePage)}" href="index.html">Home</a>
-            <a class="${this._linkClass('expertise', activePage)} text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Expertise</a>
-            <a class="${this._linkClass('collection', activePage)}" href="catalog.html">Collection</a>
-            <a class="${this._linkClass('customization', activePage)} text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Customization</a>
-            <a class="${this._linkClass('clients', activePage)} text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Clients</a>
+            <a class="${this._linkClass('aboutus', activePage)}" href="aboutus.html">About Us</a>
+            <a class="${this._linkClass('collection', activePage)}" href="collection.html">Collection</a>
+            <a class="${this._linkClass('expertise', activePage)}" href="expertise.html">Expertise</a>
           </div>
 
           <!-- Action Button + Hamburger -->
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-4 shrink-0">
             <button
               onclick="window.open('https://wa.me/6281320740494?text=Hello', '_blank')"
               class="hidden sm:flex bg-on-surface text-inverse-on-surface px-5 py-2 rounded-full font-label-md text-label-md items-center gap-2 hover:bg-primary transition-all duration-300"
             >
               <span class="material-symbols-outlined" style="font-size:16px;">shopping_cart</span>
-              Shop Retail
+              Contact Us
             </button>
 
             <!-- Hamburger (Mobile) -->
@@ -75,10 +77,9 @@ class SrNavbar extends HTMLElement {
         <!-- Mobile Dropdown Menu -->
         <div id="sr-nav-mobile" class="hidden mt-2 bg-surface-container-highest/95 backdrop-blur-md border border-white/10 rounded-2xl px-6 py-4 flex-col gap-4 shadow-xl">
           <a class="font-label-md text-label-md ${activePage === 'home' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2 border-b border-white/10" href="index.html">Home</a>
-          <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-white/10" href="#">Expertise</a>
-          <a class="font-label-md text-label-md ${activePage === 'collection' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2 border-b border-white/10" href="catalog.html">Collection</a>
-          <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-white/10" href="#">Customization</a>
-          <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2" href="#">Clients</a>
+          <a class="font-label-md text-label-md ${activePage === 'aboutus' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2 border-b border-white/10" href="aboutus.html">About Us</a>
+          <a class="font-label-md text-label-md ${activePage === 'collection' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2 border-b border-white/10" href="collection.html">Collection</a>
+          <a class="font-label-md text-label-md ${activePage === 'expertise' ? 'text-primary' : 'text-on-surface-variant'} hover:text-primary transition-colors py-2" href="expertise.html">Expertise</a>
           <button
             onclick="window.open('https://wa.me/6281320740494?text=Hello', '_blank')"
             class="mt-2 bg-primary text-surface px-5 py-2.5 rounded-full font-label-md text-label-md flex items-center justify-center gap-2 hover:brightness-110 transition-all"
@@ -117,21 +118,25 @@ class SrNavbar extends HTMLElement {
   }
 
   _initScrollEffect() {
-    const inner = this.querySelector('#sr-navbar-inner');
-    if (!inner) return;
+  const inner = this.querySelector('#sr-navbar-inner');
+  if (!inner) return;
 
-    const onScroll = () => {
-      if (window.scrollY > 60) {
-        inner.classList.add('bg-[#1A1A1B]/80', 'shadow-2xl');
-        inner.classList.remove('bg-white/10', 'shadow-xl');
-      } else {
-        inner.classList.remove('bg-[#1A1A1B]/80', 'shadow-2xl');
-        inner.classList.add('bg-white/10', 'shadow-xl');
-      }
-    };
+  const onScroll = () => {
+    if (window.scrollY > 60) {
+      inner.style.backgroundColor = 'rgba(26, 26, 27, 0.85)';
+      inner.style.boxShadow = '0 25px 50px -12px rgba(0,0,0,0.6)';
+      inner.style.backdropFilter = 'blur(16px)';
+      inner.style.borderColor = 'rgba(255,255,255,0.08)';
+    } else {
+      inner.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+      inner.style.boxShadow = '0 20px 25px -5px rgba(0,0,0,0.3)';
+      inner.style.backdropFilter = 'blur(12px)';
+      inner.style.borderColor = 'rgba(255,255,255,0.2)';
+    }
+  };
 
-    window.addEventListener('scroll', onScroll, { passive: true });
-  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
 }
 
-customElements.define('sr-navbar', SrNavbar);
+if (!customElements.get('sr-navbar')) { customElements.define('sr-navbar', SrNavbar); }

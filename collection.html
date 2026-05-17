@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<!DOCTYPE html><html lang="en" style=""><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>The Silver Collection - SR Supply</title>
@@ -8,197 +8,89 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "surface-variant": "#e4e2dd",
-                      "on-primary": "#ffffff",
-                      "on-primary-fixed": "#271900",
-                      "inverse-surface": "#30312e",
-                      "inverse-primary": "#e3c28a",
-                      "on-surface": "#1b1c19",
-                      "tertiary": "#5c5c5d",
-                      "primary-container": "#8b7040",
-                      "on-tertiary": "#ffffff",
-                      "surface": "#fbf9f4",
-                      "background": "#fbf9f4",
-                      "primary-fixed-dim": "#e3c28a",
-                      "primary-fixed": "#ffdea8",
-                      "on-background": "#1b1c19",
-                      "on-secondary": "#ffffff",
-                      "on-secondary-fixed-variant": "#44474b",
-                      "error-container": "#ffdad6",
-                      "outline-variant": "#d0c5b6",
-                      "secondary-container": "#e0e2e8",
-                      "error": "#ba1a1a",
-                      "on-tertiary-fixed-variant": "#474647",
-                      "surface-container-lowest": "#ffffff",
-                      "on-tertiary-fixed": "#1b1b1c",
-                      "on-error": "#ffffff",
-                      "secondary": "#5b5f63",
-                      "tertiary-container": "#757475",
-                      "on-secondary-container": "#616569",
-                      "inverse-on-surface": "#f2f1ec",
-                      "tertiary-fixed": "#e5e2e3",
-                      "surface-bright": "#fbf9f4",
-                      "secondary-fixed": "#e0e2e8",
-                      "on-tertiary-container": "#fffcfd",
-                      "on-primary-fixed-variant": "#5a4317",
-                      "primary": "#71582a",
-                      "surface-tint": "#735a2c",
-                      "surface-container": "#f0eee9",
-                      "on-secondary-fixed": "#181c20",
-                      "on-primary-container": "#fffbff",
-                      "secondary-fixed-dim": "#c4c6cc",
-                      "tertiary-fixed-dim": "#c8c6c7",
-                      "surface-dim": "#dbdad5",
-                      "surface-container-highest": "#e4e2dd",
-                      "on-surface-variant": "#4d463a",
-                      "surface-container-high": "#eae8e3",
-                      "surface-container-low": "#f5f3ee",
-                      "outline": "#7f7669",
-                      "on-error-container": "#93000a"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "spacing": {
-                      "margin-desktop": "64px",
-                      "section-gap": "120px",
-                      "margin-mobile": "16px",
-                      "container-max": "1440px",
-                      "base": "8px",
-                      "gutter": "24px"
-              },
-              "fontFamily": {
-                      "headline-lg": [
-                              "Libre Caslon Text"
-                      ],
-                      "body-md": [
-                              "Hanken Grotesk"
-                      ],
-                      "body-lg": [
-                              "Hanken Grotesk"
-                      ],
-                      "label-sm": [
-                              "Hanken Grotesk"
-                      ],
-                      "headline-md": [
-                              "Libre Caslon Text"
-                      ],
-                      "label-md": [
-                              "Hanken Grotesk"
-                      ],
-                      "headline-lg-mobile": [
-                              "Libre Caslon Text"
-                      ],
-                      "headline-display": [
-                              "Libre Caslon Text"
-                      ]
-              },
-              "fontSize": {
-                      "headline-lg": [
-                              "40px",
-                              {
-                                      "lineHeight": "1.2",
-                                      "fontWeight": "400"
-                              }
-                      ],
-                      "body-md": [
-                              "16px",
-                              {
-                                      "lineHeight": "1.6",
-                                      "fontWeight": "400"
-                              }
-                      ],
-                      "body-lg": [
-                              "18px",
-                              {
-                                      "lineHeight": "1.6",
-                                      "fontWeight": "400"
-                              }
-                      ],
-                      "label-sm": [
-                              "12px",
-                              {
-                                      "lineHeight": "1",
-                                      "letterSpacing": "0.03em",
-                                      "fontWeight": "500"
-                              }
-                      ],
-                      "headline-md": [
-                              "28px",
-                              {
-                                      "lineHeight": "1.3",
-                                      "fontWeight": "400"
-                              }
-                      ],
-                      "label-md": [
-                              "14px",
-                              {
-                                      "lineHeight": "1",
-                                      "letterSpacing": "0.05em",
-                                      "fontWeight": "600"
-                              }
-                      ],
-                      "headline-lg-mobile": [
-                              "32px",
-                              {
-                                      "lineHeight": "1.2",
-                                      "fontWeight": "400"
-                              }
-                      ],
-                      "headline-display": [
-                              "64px",
-                              {
-                                      "lineHeight": "1.1",
-                                      "letterSpacing": "-0.02em",
-                                      "fontWeight": "400"
-                              }
-                      ]
-              }
-      },
-          },
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#1A1A1B",
+                        "surface": "#1A1A1B",
+                        "surface-container-lowest": "#111112",
+                        "surface-container-low": "#151516",
+                        "surface-container": "#1E1E1F",
+                        "surface-container-high": "#242425",
+                        "surface-container-highest": "#2A2A2B",
+                        "on-surface": "#F9F7F2",
+                        "on-surface-variant": "#8E9196",
+                        "primary": "#A68956",
+                        "on-primary": "#1A1A1B",
+                        "outline": "#8E9196",
+                        "outline-variant": "#333333",
+                        "inverse-surface": "#F9F7F2",
+                        "inverse-on-surface": "#1A1A1B",
+                        "primary-fixed": "#A68956",
+                        "primary-fixed-dim": "#A68956",
+                        "on-primary-fixed": "#1A1A1B",
+                        "error": "#ffb4ab",
+                        "on-error": "#690005"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-12px)' }
+                        },
+                        floatReverse: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(12px)' }
+                        },
+                        fadeIn: { '0%': { opacity: '0', transform: 'translateY(10px)' }, '100%': { opacity: '1', transform: 'none' } }
+                    },
+                    animation: {
+                        'float-slow': 'float 8s ease-in-out infinite',
+                        'float-delayed': 'float 8s ease-in-out 4s infinite',
+                        'float-reverse': 'floatReverse 10s ease-in-out infinite',
+                        'fade-in': 'fadeIn 0.6s ease-out forwards'
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "container-max": "1440px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-display": ["Libre Caslon Text"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}]
+                    }
+                },
+            },
         }
-      </script>
-<style>
-        body {
-            background-color: #1a1a1a;
-            color: #e4e2dd;
-            background-image: radial-gradient(circle at 50% 0%, #2a2a2a 0%, #1a1a1a 100%);
-            background-attachment: fixed;
-        }
-        .btn-primary {
-            background-color: #A68956;
-            color: #1b1c19;
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #8b7040;
-        }
-        .btn-secondary {
-            border: 1px solid #7f7669;
-            color: #e4e2dd;
-            transition: all 0.3s ease;
-        }
-        .btn-secondary:hover {
-            background-color: rgba(255,255,255,0.05);
-            border-color: #A68956;
-        }
-        .glass-panel {
-            background: rgba(48, 49, 46, 0.6);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255,255,255,0.05);
-        }
-    </style>
+    </script>
+
 <style data-stitch-cursor=""></style><style data-stitch-scroll-lock=""></style></head>
-<body class="font-body-md text-body-md antialiased selection:bg-primary selection:text-on-primary">
+<body class="bg-background text-on-surface font-body-md selection:bg-primary selection:text-on-primary antialiased" style="background-color: #1A1A1B;">
 <!-- TopNavBar (Reusable Component) -->
 <sr-navbar active-page="collection"></sr-navbar>
 <!-- Main Content -->
@@ -211,10 +103,10 @@
 </div>
 <!-- Filters -->
 <div class="flex flex-wrap gap-4 mt-8 md:mt-0">
-<button class="px-4 py-2 text-label-sm font-label-sm uppercase tracking-wider border border-[#A68956] text-[#A68956] hover:bg-[#A68956]/10 transition-colors">All</button>
-<button class="px-4 py-2 text-label-sm font-label-sm uppercase tracking-wider text-surface-variant hover:text-[#A68956] transition-colors">Buckles</button>
-<button class="px-4 py-2 text-label-sm font-label-sm uppercase tracking-wider text-surface-variant hover:text-[#A68956] transition-colors">Emblems</button>
-<button class="px-4 py-2 text-label-sm font-label-sm uppercase tracking-wider text-surface-variant hover:text-[#A68956] transition-colors">Bespoke Art</button>
+<button class="px-4 py-2 rounded-full text-label-sm font-label-sm uppercase tracking-wider border border-[#A68956] text-[#A68956] hover:bg-[#A68956]/10 transition-colors">All</button>
+<button class="px-4 py-2 rounded-full text-label-sm font-label-sm uppercase tracking-wider text-surface-variant hover:text-[#A68956] transition-colors">Buckles</button>
+<button class="px-4 py-2 rounded-full text-label-sm font-label-sm uppercase tracking-wider text-surface-variant hover:text-[#A68956] transition-colors">Emblems</button>
+<button class="px-4 py-2 rounded-full text-label-sm font-label-sm uppercase tracking-wider text-surface-variant hover:text-[#A68956] transition-colors">Bespoke Art</button>
 </div>
 </header>
 <!-- Product Grid -->
@@ -230,7 +122,7 @@
 </div>
 <div class="flex justify-between items-center mt-auto">
 <span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
-<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+<button class="border border-outline text-on-surface hover:bg-white/10 transition-all rounded-full px-6 py-2 font-label-md text-label-md uppercase tracking-wider">Inquire</button>
 </div>
 </article>
 <!-- Product Card 2 -->
@@ -244,7 +136,7 @@
 </div>
 <div class="flex justify-between items-center mt-auto">
 <span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
-<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+<button class="border border-outline text-on-surface hover:bg-white/10 transition-all rounded-full px-6 py-2 font-label-md text-label-md uppercase tracking-wider">Inquire</button>
 </div>
 </article>
 <!-- Product Card 3 -->
@@ -258,7 +150,7 @@
 </div>
 <div class="flex justify-between items-center mt-auto">
 <span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
-<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+<button class="border border-outline text-on-surface hover:bg-white/10 transition-all rounded-full px-6 py-2 font-label-md text-label-md uppercase tracking-wider">Inquire</button>
 </div>
 </article>
 <!-- Product Card 4 -->
@@ -272,7 +164,7 @@
 </div>
 <div class="flex justify-between items-center mt-auto">
 <span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
-<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+<button class="border border-outline text-on-surface hover:bg-white/10 transition-all rounded-full px-6 py-2 font-label-md text-label-md uppercase tracking-wider">Inquire</button>
 </div>
 </article>
 <!-- Product Card 5 -->
@@ -286,7 +178,7 @@
 </div>
 <div class="flex justify-between items-center mt-auto">
 <span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
-<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+<button class="border border-outline text-on-surface hover:bg-white/10 transition-all rounded-full px-6 py-2 font-label-md text-label-md uppercase tracking-wider">Inquire</button>
 </div>
 </article>
 <!-- Product Card 6 -->
@@ -300,7 +192,7 @@
 </div>
 <div class="flex justify-between items-center mt-auto">
 <span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-widest border border-outline/30 px-2 py-1">925 Sterling Silver</span>
-<button class="btn-secondary font-label-md text-label-md px-4 py-2 uppercase tracking-wider">Inquire</button>
+<button class="border border-outline text-on-surface hover:bg-white/10 transition-all rounded-full px-6 py-2 font-label-md text-label-md uppercase tracking-wider">Inquire</button>
 </div>
 </article>
 </section>
@@ -308,12 +200,11 @@
 <section class="mt-section-gap pt-16 border-t border-outline/20 text-center max-w-3xl mx-auto">
 <h2 class="font-headline-lg text-headline-lg text-on-surface dark:text-inverse-on-surface mb-6">Custom Silver Orders</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-surface-variant mb-8">Require a specific specification or a completely bespoke design? Our master craftsmen in Yogyakarta are available for specialized commissions.</p>
-<button class="btn-primary font-label-md text-label-md px-8 py-3 uppercase tracking-wider inline-flex items-center gap-2">
+<button class="bg-primary text-surface px-10 py-5 font-label-md text-label-md inline-flex items-center gap-3 mx-auto hover:brightness-110 transition-all rounded-full font-bold">
                 Begin Consultation <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </button>
 </section>
 </main>
-<!-- Footer (Reusable Component) -->
 <sr-footer></sr-footer>
 
 <!-- Reusable Components -->
