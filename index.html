@@ -102,6 +102,7 @@
 <body class="bg-background text-on-surface font-body-md selection:bg-primary selection:text-on-primary antialiased" style="background-color: #1A1A1B;">
 <!-- TopNavBar (Reusable Component) -->
 <sr-navbar active-page="home"></sr-navbar>
+<main class="opacity-0 animate-fade-in">
 <!-- Hero Section -->
 <header class="relative min-h-[819px] flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
@@ -400,8 +401,9 @@
 </div>
 </div>
 </section>
+</main>
 <!-- Footer (Reusable Component) -->
-<sr-footer></sr-footer>
+<sr-footer class="block opacity-0 animate-fade-in" style="animation-delay: 0.3s;"></sr-footer>
 <!-- Reusable Components -->
 <script src="components/navbar.js"></script>
 <script src="components/footer.js"></script>

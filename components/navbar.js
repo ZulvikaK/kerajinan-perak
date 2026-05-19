@@ -85,7 +85,7 @@ class SrNavbar extends HTMLElement {
             class="mt-2 bg-primary text-surface px-5 py-2.5 rounded-full font-label-md text-label-md flex items-center justify-center gap-2 hover:brightness-110 transition-all"
           >
             <span class="material-symbols-outlined" style="font-size:16px;">shopping_cart</span>
-            Shop Retail
+            Contact Us
           </button>
         </div>
       </nav>
